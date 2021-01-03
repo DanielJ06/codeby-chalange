@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-image {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  background-color: blue;
+}
+
+.bg-image .logo {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+.bg-image h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.bg-image button {
+  outline: none;
+  cursor: pointer;
+  
+  font-weight: bold;
+  border-radius: 5px;
+
+  margin-top: 25px;
+  padding: 12px 75px;
+
+  border: 3px solid #fff;
+  color: #fff;
+  background-color: transparent;
+
+  transition: color 1.5s, background-color 1.5s ease;
+}
+
+.bg-image button:hover {
+  border: 3px solid #fff;
+  color: #000;
+  background-color: #fff;
+}
+
+.categories-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 65px;
+}
+
+.categories-section .section-header h2 {
+  font-size: 2.5rem;
+}
+
+.categories-section .images-section {
+  display: grid;
+  grid-template-areas: 
+  'image1 image2 image2'
+  'image3 image3 image3'
+  'image4 image4 image5'
+  ;
+}
+
+.image1 {
+  background-color: #50e22b;
+  width: 100%;
+  grid-area: image1;
+}
+
+.image2 {
+  background-color: #e2c02b;
+  width: 100%;
+  grid-area: image2;
+}
+
+.image3 {
+  background-color: #107796;
+  width: 100%;
+  grid-area: image3;
+}
+
+.image4 {
+  background-color: #e2652b;
+  width: 100%;
+  grid-area: image4;
+}
+
+.image5 {
+  background-color: blueviolet;
+  width: 100%;
+  grid-area: image5;
+}
