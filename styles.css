@@ -15,13 +15,15 @@
   justify-content: center;
 
   height: 100vh;
-  background-color: blue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/mountain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2000px;
 }
 
 .bg-image .logo {
-  background-color: #fff;
   width: 150px;
-  height: 150px;
+  height: auto;
   margin-bottom: 25px;
 }
 
@@ -61,12 +63,21 @@
   padding: 30px 65px;
 }
 
-.categories-section .section-header h2 {
+.plans-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 65px;
+  background-color: #f6f6f6;
+}
+
+.section-header h2 {
   font-size: 2.5rem;
 }
 
 .categories-section .images-section {
+  margin-top: 50px;
   display: grid;
+  gap: 15px;
   grid-template-areas: 
   'image1 image2 image2'
   'image3 image3 image3'
@@ -74,32 +85,94 @@
   ;
 }
 
+.categories-section .images-section div {
+  display: flex;
+  flex-direction: column;
+
+  color: #fff;
+  height: 300px;
+  padding: 25px;
+}
+
+.categories-section .images-section div h1 {
+  font-size: 2.5rem;
+}
+
 .image1 {
-  background-color: #50e22b;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/nature.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px;
   grid-area: image1;
+
+
 }
 
 .image2 {
-  background-color: #e2c02b;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/daily.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1000px;
   grid-area: image2;
 }
 
 .image3 {
-  background-color: #107796;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/together.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1800px;
   grid-area: image3;
+
+  justify-content: center;
 }
 
 .image4 {
-  background-color: #e2652b;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/analysis.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 800px;
   grid-area: image4;
+
+  align-items: flex-end;
 }
 
 .image5 {
-  background-color: blueviolet;
-  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 55, 54, 0.3)), url(./images/pictures.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1000px;
   grid-area: image5;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 50px 10px;
+  color: #fff;
+  background-color: #5D80BB;
+}
+
+.content .price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1E5898;
+
+  padding: 8px;
+  margin: 0;
+}
+
+.content .price h3 {
+  font-size: 1.5rem;
+}
+
+.content .desc {
+  padding: 8px;
 }
